@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emi caculator</title>
+    <link rel="stylesheet" href="style.css" />
+   
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="title"><label>Loan Amount</label><span id="principle-amount">5000000</span></div>
+            <input type="range" min="0" max="10000000" id="principle" >
+
+            <div class="title"><label>Rate of interest</label><span id="rate-amount">10</span></div>
+            <input type="range" min="0.0" max="15.0" id="rate" step="0.01">
+
+            <div class="title"><label>Tenure(in years)</label><span id="year-amount">15</span></div>
+            <input type="range" min="0" max="30" id="year">
+
+            
+            <div class="divider"></div>
+            <div class="title result-div"><label>Monthly Amount</label><span  id="monthly-amount" class="result monthly-amount"></span></div>
+            <div class="title result-div"><label>Principal Amount</label><span id="principal-amount" class="result principal-amount"></span></div>
+            <div class="title result-div"><label>Total Interest</label><span id="total-interest" class="result total-interest"></span></div>
+            <div class="title result-div"><label>total  Amount</label><span id="total-amount" class="result total-amount"></span></div>
+        </form>
+    </div>
+    <script type="text/javascript" src="emi.js"></script>
+</body>
+</html>
